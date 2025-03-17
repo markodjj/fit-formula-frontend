@@ -5,12 +5,21 @@ import "./App.css";
 function App() {
   const [data, setData] = useState([]); // Corrected useState
   const API_URL = import.meta.env.VITE_BACKEND_URL; // Corrected variable name
+  const PORT = import.meta.env.VITE_PORT;
+  const ENV = import.meta.env.VITE_NODE_ENV;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        console.log(API_URL);
-        const response = await fetch(`${API_URL}/api/nutritions/all`);
+        let api_url = "";
+        if (ENV === "development") {
+          api_url = PORT;
+        } else if (ENV === "prodaction") {
+          api_url = API_URL;
+        }
+        console.log(api_url);
+        const response = await fetch(`${api_url}/api/nutritions/all`);
+
         const result = await response.json();
         console.log(result);
         setData(result);
