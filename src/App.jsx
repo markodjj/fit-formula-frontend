@@ -1,28 +1,36 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [data, setData] = useState([]); // Corrected useState
+  const API_URL = import.meta.env.VITE_API_URL; // Corrected variable name
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`${API_URL}/api/nutritions/all`);
+        const result = await response.json();
+        console.log(result);
+        setData(result);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>
+      <div>Result</div>
       <div>
-        <a href="https://vite.dev" target="_blank"></a>
-        <a href="https://react.dev" target="_blank"></a>
+        {data.length > 0 ? (
+          data.map((item, indx) => <p key={indx}>{item}</p>)
+        ) : (
+          <p>Loading...</p>
+        )}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }
