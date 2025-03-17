@@ -4,7 +4,7 @@ import "./App.css";
 
 function App() {
   const [data, setData] = useState([]); // Corrected useState
-  const API_URL = import.meta.env.VITE_API_URL; // Corrected variable name
+  const API_URL = import.meta.env.BACKEND_URL; // Corrected variable name
 
   useEffect(() => {
     const fetchData = async () => {
