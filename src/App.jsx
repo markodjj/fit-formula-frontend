@@ -9,6 +9,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        console.log(API_URL);
         const response = await fetch(`${API_URL}/api/nutritions/all`);
         const result = await response.json();
         console.log(result);
