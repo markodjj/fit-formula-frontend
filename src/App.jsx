@@ -26,11 +26,13 @@ function App() {
     <>
       <div>Result</div>
       <div>
-        {data.length > 0 ? (
-          data.map((item, indx) => <p key={indx}>{item}</p>)
-        ) : (
-          <p>Loading...</p>
-        )}
+        <ul>
+          {data.map((item, index) => (
+            <li key={index}>
+              <label>{item.name}</label>
+            </li>
+          ))}
+        </ul>
       </div>
     </>
   );
