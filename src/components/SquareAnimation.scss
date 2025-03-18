@@ -1,0 +1,115 @@
+
+@keyframes rotation {
+   
+    0% {
+        transform: rotate(0deg) ;
+    }
+    100% {
+        transform: rotate(360deg) ;
+    }
+}
+@mixin makeSquare($size, $margin-left, $margin-top, $isRight, $delay){
+    will-change: transform;
+    width: calc($size + 30px);
+    height: calc($size + 30px);
+    border: solid 3px red;
+
+    // margin-left: $margin-left;
+    margin-left: calc($margin-left * $isRight);
+    margin-top: $margin-top;
+
+    animation: rotation 10s linear infinite;
+    animation-delay: $delay;
+    transform-origin: center;
+    position: inherit;
+
+  
+}
+@keyframes moving-right {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(50vw, 0, 0);
+    }
+}
+
+@keyframes moving-left {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-50vw, 0, 0);
+    }
+}
+
+.squares-left{
+    will-change: transform;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: moving-right 10s linear infinite;
+    animation-direction: alternate;
+    transform-origin: center;
+    position: absolute;
+    
+}
+
+.squares-right{
+    will-change: transform;
+    right: 100px;
+    width: 100px;
+    height: 100px;
+   
+    background-color: blue;
+    animation: moving-left  10s linear infinite;
+    animation-direction: alternate;
+    transform-origin: center;
+    position: absolute;
+    
+}
+
+.squares-left{
+   
+    // .square1{
+    //     @include makeSquare(50px, 50x, 40px, 1, 0s);
+    // }
+    // .square2{
+    //     @include makeSquare(30px, 200px, 120px, 1, 0.1s);
+    // }
+    // .square3{
+    //     @include makeSquare(70px, 420px, 160px, 1, 0.4s);
+    // }
+    // .square4{
+    //     @include makeSquare(80px, 550px, 40px, 1, 0.3s);
+    // }
+    // .square5{
+    //     @include makeSquare(50px, 750px, 90px, 1, 0.3s);
+    // }
+
+}
+
+.squares-right{
+    // .square1{
+    //     @include makeSquare(50px, 50x, 40px, -1, 0s);
+    // }
+    // .square2{
+    //     @include makeSquare(30px, 250px, 120px, -1, 0.1s);
+    // }
+    // .square3{
+    //     @include makeSquare(20px, 40px, 160px, -1, 0.4s);
+    // }
+    // .square4{
+    //     @include makeSquare(40px, 600, 200px, -1, 0.3s);
+    // }
+    // .square5{
+    //     @include makeSquare(50px, 500px, 220px, -1, 0.3s);
+    // }
+}
+
+.squrare-animation-container{
+    overflow: hidden;
+    margin-top: 20rem;
+    width: 100%;
+}

@@ -1,0 +1,135 @@
+$primary-color: #3b82f6;
+$submenu-text-color: #4a5568;
+$quat-marker-bg-color: #3b82f6;
+$button-bg-color: #ffff;
+$button-hover-bg-color: #7d879a73;
+
+// $base-text-font-size: clamp(0.5rem, 2vw, 1rem);
+
+// $lg-title: clamp(1rem, 4vw, 3rem);
+// $md-title: clamp(1rem, 3vw, 2rem);
+// $sm-title: clamp(1rem, 2vw, 2rem);
+
+$base-text-font-size: 1rem;
+
+$lg-title: clamp(1rem, 4vw, 3rem);
+$md-title: clamp(1rem, 4vw, 2rem);
+$sm-title: 1rem;
+
+.article {
+    width: 100%;
+    font-size: $sm-title;
+    margin: 0 auto;
+    padding: 3% 5% 3% 5%;
+    
+    >h1{
+        font-size: $lg-title;
+        font-weight: 700;
+    }
+
+    .article-container{
+        
+       
+        padding-top: 40px;
+        .article-content{
+            width: 80%;
+            h3{
+                padding-top: 30px ;
+                font-size: $sm-title;
+                font-weight: 600;
+            }
+            .main-photo {
+                // padding-right: 100px;
+                width: 100vh;
+            }
+
+            h2{
+                font-size: $md-title;
+                font-weight: 700;
+                color: $quat-marker-bg-color;
+            }
+
+            .content-table{
+             
+                li {
+                    transition: color 0.2s ease;
+
+                    &:hover {
+                        color: $primary-color;
+                        text-decoration: underline;
+                    }
+
+                    
+                }
+                h1 {
+                    font-size: $md-title;
+                    font-weight: 600;
+                }
+                >ul {
+                    list-style: square;
+                    padding-left: 20px;
+                    font-size: $sm-title;
+                    
+                    ul {
+                        list-style: square;
+                        padding-left: 20px;
+                        
+                        li {
+                            color: $submenu-text-color;
+                            opacity: 0.5;
+                        }
+                        li::marker{
+                            color:$quat-marker-bg-color
+                        }
+                    }
+                }
+            }
+
+            section {
+                padding: 20px 0px 20px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                gap: 20px;
+                p {
+                    padding: 5px 0px 5px 0;
+                }
+            }
+
+            hr {
+                border: none;
+                height: 0.1px;
+                background-color: $submenu-text-color;
+                margin: 10px 0;
+            }
+
+            .quoat-container{
+                display: flex;
+                width: 100%;
+                .marker {
+                    width: 20px;
+                    margin-left: 30px;
+                    background-color: $quat-marker-bg-color;
+                }
+                .header {
+                    // width: 90%;
+                    display: flex;
+                    align-items: center;
+                    height: 50px ;
+                    margin-left: 20px;
+                    font-size: $base-text-font-size;
+                    font-weight: 600;
+                }
+            }
+        }
+    
+        
+        @media (min-width: 768px) {
+            display: flex;
+        }
+       
+    }
+
+
+   
+}

@@ -1,0 +1,75 @@
+$quat-marker-bg-color: #3b82f6;
+$button-bg-color: #3b82f6;
+$button-text-color: #ffff;
+$base-text-font-size: 20px;
+$lg-title: 50px;
+$md-title: 1.5rem;
+$sm-title: 20px;
+
+.calculator-page {
+    width: 100%;
+    font-size: $sm-title;
+    margin: 0 auto;
+    // padding: 3% 5%;
+    padding: min(5em, 2%);
+
+    .hero {
+       
+        width: 100%;
+        gap: 5rem;
+        justify-content: space-around;
+        margin-bottom: 5rem;
+        .left-side {
+            margin-bottom: 3rem;
+            
+
+            h1 {
+                font-size: clamp(1.8rem, 5vw, 2.5rem);
+                font-weight: 800;
+            }
+            
+            p {
+                padding: min(1em, 10%);
+            }
+
+            ul {
+                list-style: square;
+                padding-left: min(2em, 10%);
+            }
+
+            li {
+                
+                padding: min(0.5em, 5%);
+                
+            }
+
+            li::marker{
+                color:$quat-marker-bg-color;
+            }
+
+            button {
+                background-color: $button-bg-color;
+                padding: 1rem;
+                color: $button-text-color;
+                font-size: $md-title;
+                font-weight: 700;
+                margin-top: 2rem;
+                margin-left: 30%;
+                // margin: 0 auto;
+            }
+            @media (min-width: 768px) {
+                width: 70%;
+                margin-bottom: 0;
+            }
+        }
+        .right-side {
+            width: 30%;
+        }
+        @media (min-width: 768px) {
+            display: flex;
+          }
+    }
+
+ 
+   
+}

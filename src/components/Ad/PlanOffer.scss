@@ -1,0 +1,35 @@
+$button-bg-color: #ffff;
+$button-hover-bg-color: #7d879a73;
+$btn-color: #1f2937; 
+.plan-offer{
+    // width: 25%;
+    flex: 1;
+    .plan-offer-container{
+        width: 100%;
+        background-color: aqua;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        button {
+            position: absolute;
+            font-weight: 700;
+            font-size: clamp(2rem, 4vw, 3rem);
+            
+            top: 70%;
+            width: 70%;
+            height: 25%;
+            background-color: $button-bg-color;
+            color:$btn-color;
+            &:hover{
+                transition: background-color color 0.3s ease;
+                background-color: $button-hover-bg-color;
+
+                color:$button-bg-color;
+            }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

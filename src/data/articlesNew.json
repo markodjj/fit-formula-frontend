@@ -1,0 +1,23 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "ime": "Junetina (govedina)",
+      "text1": "Ukoliko naporno treniraš, treba da jedeš meso.\nJunetina je najbolji izbor, kada je u pitanju crveno meso.\nNutritivne karakteristike čine junetinu gotovo savršenom hranom, a u ovom članku otkrićeš zašto je tako..",
+      "kalorije": {
+        "p1": "Za namirnicu koja sadrži izobilje proteina i raznih mikronutrijenata, junetina nema puno kalorija.",
+        "k": "Sa 276 kalorija na 100 g mesa, junetina spada u umereno kalorične namirnice.",
+        "p2": "Naravno, što je komad junetine masniji, imaće srazmerno više kalorija u odnosu na krto parče mesa."
+      },
+      "proteini": "Ako se tvoji mišići pitaju, onda nema boljeg izvora proteina od životinjskog mesa.\nTo važi i za junetinu, pri čemu u 100 g ove hrane belančevine učestvuju sa čak 14,97 grama.\nKao što znaš, životinjsko meso sadrži sve esencijalne amino kiseline i po sastavu je najviše nalik mišićima u tvom telu.\nJunetina je poznata i kao namirnica sa visokom biološkom vrednošću, što znači da je njen proteinski sastav takav da se izuzetno lako vari i apsorbuje u organizmu.",
+      "hidrati": "Junetina ne sadrži ugljene hidrate, pa samim tim ni šećere.",
+      "masti": "Udeo masti u junetini zavisi od mnogo faktora, kao što su rasa, starost, pol i način ishrane same životinje, ali je jednako važno i koji je komad mesa u pitanju.\nKrto parče junetine sadrži oko 5-10% masti, dok parčad koja se mogu naći u prodaji mogu da imaju i do 23,52 g masti na 100 g namirnice.\nU junetini su uglavnom sadržane zasićene i mononezasićene masne kiseline.\nOd zasićenih masnih kiselina, stearinska kiselina, koja ne utiče na nivo holesterola, ima udeo od otprilike jedne trećine u mastima u junetini.\nImaj na umu da je izvesna količina zasićenih masti iz junetine dobra za održavanje nivoa testosterona neophodnog za naporne treninge.\nTakođe, u junetini su prisutne i trans masne kiseline, koje se smatraju zdravim, za razliku od trans masti dobijenih industrijskom proizvodnjom.\nMeđu trans mastima iz junetine posebnu pažnju privukla je konjugovana linoleinska kiselina, koja se u istraživanjima odlično pokazala u borbi protiv karcinoma.",
+      "vlakna": "Kao što je to slučaj sa drugom hranom životinjskog porekla, junetina ne sadrži vlakna.",
+      "zdravlje": {
+        "t1": "Junetina je najbolji prehrambeni izvor cinka, minerala koji je neophodan organizmu za funkcionisanje metabolizma, imuniteta, rast i obnavljanje tkiva.\nPosebno je važno to što, za razliku od biljnih izvora, junetina ne sadrži antinutrijente, pa se tako i cink iz ovog mesa najbolje apsorbuje.\nOsim cinka, junetina je poznata i kao hrana bogata gvožđem.",
+        "k": "Junetina je bogata hem gvožđem i dobra je za prevenciju i lečenje anemije."
+      }
+    }
+  ],
+  "count": 1
+}

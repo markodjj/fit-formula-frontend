@@ -1,0 +1,69 @@
+$primary-color: #3b82f6;
+$text-color: #ffffff;
+$bg-color: #1f2937;
+$overlay-color: rgba(0, 0, 0, 0.5);
+
+.side-menu {
+  position: relative;
+  overflow: hidden;
+
+  .toggle-button {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: $primary-color;
+    color: $text-color;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    z-index: 40;
+    @media (min-width: 768px) {
+      display: none; 
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: $overlay-color;
+    z-index: 20;
+    transition: opacity 0.5s;
+    display: none;
+    &.visible {
+      display: block;
+    }
+  }
+
+  .side-menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 16rem; 
+    background: $bg-color;
+    color: $text-color;
+    z-index: 30;
+    transition: transform 0.5s;
+    transform: translateX(100%); 
+    &.visible {
+      transform: translateX(0); 
+    }
+
+    .side-menu-list {
+      position: fixed;
+      top: 2.5rem; 
+      padding: 1rem ;
+
+      list-style: none;
+      margin: 0;
+
+      .auth-btn {
+        background: $primary-color;
+        color: $text-color;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        margin-top: 1rem;
+        z-index: 10;
+      }
+    }
+  }
+}

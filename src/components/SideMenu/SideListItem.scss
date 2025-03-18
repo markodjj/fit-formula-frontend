@@ -1,0 +1,66 @@
+.side-list-item {
+    border-bottom: 1px solid #374151; // Border color for separator
+    padding-bottom: 0.5rem;
+  
+    .list-item-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      .link {
+        font-size: 1.125rem; 
+        font-weight: 500; 
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #3b82f6; 
+        }
+      }
+  
+      .toggle-btn {
+        margin-left: 0.5rem;
+        font-size: 1.25rem; 
+        transition: color 0.3s ease;
+        width: 1.5rem; 
+        display: flex;
+        justify-content: center;
+        // focus:outline-none;
+        
+        &:hover {
+          color: #3b82f6;
+        }
+      }
+    }
+  
+    .submenu {
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+  
+      overflow: hidden;
+      transition: all 0.5s ease-in-out;
+  
+      &.open {
+        max-height: 100vh; 
+        opacity: 1;
+        visibility: visible;
+      }
+  
+      &.closed {
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+      }
+  
+      .submenu-item {
+        a {
+          font-size: 1rem; 
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: #3b82f6; 
+          }
+        }
+      }
+    }
+  }
+  

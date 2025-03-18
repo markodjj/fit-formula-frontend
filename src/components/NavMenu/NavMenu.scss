@@ -1,0 +1,79 @@
+$primary-color: #3b82f6; 
+$text-color: #ffffff; 
+$bg-color: #1f2937; 
+
+@mixin flex-display {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-menu {
+  position: relative;
+  
+  // For the .nav-list element, apply flex display and gap only at medium screens and above
+  .nav-list {
+    display: none;
+    background: $bg-color;
+    color: $text-color;
+    padding: 1rem;
+    z-index: 50;
+    @media (min-width: 768px) {
+      @include flex-display; 
+    }
+  }
+
+  // For the logo element, make it display flex on medium screens and above
+  .logo {
+    display: none;
+    height: 2.5rem;
+    width: auto;
+    margin-right: 1rem;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  // For nav-items, apply flex display on medium screens and above
+  .nav-items {
+    display: none;
+    @media (min-width: 768px) {
+      @include flex-display;
+    }
+  }
+
+  // Auth button styling, hidden by default, displayed at medium screens and above
+  .auth-btn {
+    display: none;
+    background: $primary-color;
+    color: $text-color;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    z-index: 10;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  // Mobile menu styling, hidden on medium screens and above
+  .mobile-menu {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    background: $bg-color;
+    color: $text-color;
+    padding: 1rem;
+
+    
+    // Mobile-specific logo and auth button behavior
+    .logo,
+    .auth-btn {
+      display: flex;
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+  }
+}
