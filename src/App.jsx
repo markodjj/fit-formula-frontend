@@ -54,7 +54,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BMRCalculator from "./components/Calculators/BMRCalculator.jsx";
 import TDEECalculator from "./components/Calculators/TDEECalculator.jsx";
 import CaloriesCalculator from "./components/Calculators/CaloriesCalculator.jsx";
-import CaloriesTable from "./components/Tables/CaloriesTable.JSX";
 import TablePage from "./pages/TablePage.jsx";
 
 import Navigation from "./pages/Navigation.jsx";
