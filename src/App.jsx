@@ -63,6 +63,10 @@ import ArticlePage from "./pages/ArticlePage.jsx";
 import ComparePage from "./pages/ComparePage.jsx";
 import "./style/global.scss";
 
+import LoginPage from "./pages/LoginPage";
+import Registration from "./pages/Registration";
+import Home from "./pages/Home";
+
 function App() {
   return (
     <BrowserRouter>
@@ -83,6 +87,10 @@ function App() {
         <Route path="/article/" element={<ArticlePage />} />
         <Route path="/article/:name" element={<ArticlePage />} />
         <Route path="/uporedi" element={<ComparePage />} />
+
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/registration" element={<Registration />} />
 
         {/* <Route path='/onama' element={< />} /> */}
       </Routes>

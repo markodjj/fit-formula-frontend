@@ -27,6 +27,7 @@ const CalculatorPage = () => {
       <div className="hero">
         <div className="left-side">
           <h1 className="">{calculatorsData[type].h1}</h1>
+
           <p>{calculatorsData[type].p1}</p>
           <ul>
             {calculatorsData[type].ul.map((item, index) => (
