@@ -14,5 +14,21 @@
       "t1": "Junetina je najbolji prehrambeni izvor <strong>cinka</strong>, minerala koji je neophodan organizmu za funkcionisanje metabolizma, imuniteta, rast i obnavljanje tkiva.\nPosebno je važno to što, za razliku od biljnih izvora, junetina ne sadrži antinutrijente, pa se tako i cink iz ovog mesa najbolje apsorbuje.\nOsim cinka, junetina je poznata i kao hrana bogata gvožđem.",
       "k": "Junetina je bogata hem gvožđem i dobra je za prevenciju i lečenje anemije."
     }
+  },
+  "Pileće belo meso": {
+    "text1": "Da li želiš da smršaš ili nabaciš mišićnu masu, a u isto vreme da uživaš u tome što jedeš?\nPileće belo meso je idealan izbor za tvoj ukusan i zdrav obrok.\nVisoka količina proteina koju belo meso sadrži pomaže tvom telu da <strong>izgradi mišiće</strong>, dok njegova niska kaloričnost pozitivno utiče na <strong>smanjenje telesne težine</strong>.\nUpravo zbog raznih benefita koje ima na zdravlje i izgled, pileće belo meso je jedna od najčešće konzumiranih vrsta mesa širom sveta.",
+    "kalorije": {
+      "p1": "Porcija pilećeg belog mesa daje tvom telu puno energije i hranljivih materija, bez visokog kalorijskog unosa.",
+      "k": "U 100 grama pilećeg belog mesa ima 120 kCal.",
+      "p2": "Interesantno je da <strong>80% kalorija</strong> iz pilećeg mesa <strong>dolazi iz proteina</strong>, a samo 20% iz masti, što je mnogo zdraviji odnos u odnosu na bilo koju drugu vrstu mesa."
+    },
+    "proteini": "Kao što smo naveli, pileće belo meso obiluje proteinima.\nNa <strong>100 g</strong> pilećeg belog mesa dolazi čak <strong>22,50 g</strong> proteina.\nUkoliko konzumiraš meso, uz pileće belo meso ćeš na najlakši način da ispuniš dnevne potrebe svog organizma za proteinima, bez unošenja mnogo masti.\nProteini pomažu tvom telu da izgradi i održi mišičnu masu i zato je pileće belo meso neizostavan deo ishrane bodibildera i sportista.",
+    "hidrati": "Pileće belo meso <strong>ne sadrži ugljene hidrate.</strong>\nZbog toga je i njegov glikemijski indeks ravan nuli, što ga čini preporučljivom vrstom mesa za sve koji se bore sa insulinskom rezistencijom.\nImajući u vidu da je prekomeran unos ugljenih hidrata jedan od najčešćih razloga za gojaznost, ne čudi zašto je pileće belo meso sastavni deo mnogih planova zdrave ishrane.",
+    "masti": "Na <strong>100 g</strong>, pileće belo sadrži <strong>2,62 g</strong> masti, od kojih zasićene čine zanemarljivih 0,563 g.\nDoduše, ako ne skineš kožicu sa pilećih grudi, procenat masti će biti veći, kao i kalorijski unos.\nTakođe, način pripreme pilećeg belog mesa je veoma bitan.\nPileće belo meso kuvano, dinstano, pečeno u rerni ili na roštilju imaće mnogo manji procenat masti u odnosu na istu namirnicu pohovanu ili prženu u ulju.",
+    "vlakna": "Pileće belo meso nije izvor vlakana.\nIpak, to uopšte ne umanjuje pozitivan uticaj koji ova namirnica ima na tvoje zdravlje i izgled\nUprkos tome što ne sadrži vlakna kojima se tvoj stomak raduje, pileće belo meso veoma lako se vari i ne opterećuje digestivni trakt.",
+    "zdravlje": {
+      "t1": "Osim što predstavlja idealan izvor proteina, ova vrsta mesa takođe <strong>sadrži mikronutrijente</strong> veoma značajne za tvoje zdravlje.",
+      "k": "Preporučljivo je da pileće belo meso konzumiraš pre i posle treninga, kao i pre spavanja."
+    }
   }
 }
