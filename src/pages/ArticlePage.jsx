@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { fetchAllFoods } from "../utils/foodService";
 import Article from "../components/Articles/Article";
+import PlanOffer from "../components/Ad/PlanOffer";
 
 import "./ArticlePage.scss";
 
@@ -45,7 +46,7 @@ const ArticlePage = () => {
               mestu. Počnite pretragu odmah!
             </p>
             <div>
-              <img src="../public/assets/plan-ad-wide.png" alt="" />
+              <PlanOffer planName={"Plan-ad-wide"} />
             </div>
           </div>
           <div className="search-list">

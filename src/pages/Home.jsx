@@ -4,6 +4,7 @@ import { LoginButton } from "../components/User/LoginButton";
 import { LogOutButton } from "../components/User/LogOutButton";
 
 import "./Home.scss";
+import FetchedImage from "../components/FetchedImage";
 
 const Home = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -45,11 +46,13 @@ const Home = () => {
               gubitak kilograma, održavanje trenutne težine ili povećanje
               mišićne mase.
             </p>
-            <p>
-              Detaljne nutritivne tabele Zanima vas koliko kalorija ima u
-              omiljenim namirnicama? Ili želite da znate koliko proteina unosite
-              kroz obroke? Naša baza sadrži nutritivne informacije za preko 50
-              namirnica, uključujući:
+            <div>
+              <p>
+                Detaljne nutritivne tabele Zanima vas koliko kalorija ima u
+                omiljenim namirnicama? Ili želite da znate koliko proteina
+                unosite kroz obroke? Naša baza sadrži nutritivne informacije za
+                preko 50 namirnica, uključujući:
+              </p>
               <ul>
                 <li>Kalorije (kCal)</li>
                 <li>Proteine</li>
@@ -59,7 +62,7 @@ const Home = () => {
               </ul>
               Sve informacije su prikazane jasno i pregledno kako biste lako
               mogli da planirate obroke i unos nutrijenata.
-            </p>
+            </div>
             <p>
               Upoređivanje nutritivnih vrednosti Ne možete da se odlučite između
               različitih namirnica? Dodajte ih u našu tabelu za upoređivanje i
@@ -68,11 +71,13 @@ const Home = () => {
               sa našim uporednim prikazom, odluka će biti lakša nego ikad!{" "}
             </p>
             <h2> Prijavite se i dobijte personalizovanu podršku </h2>
-            <p>
-              Ne morate biti sami na svom putu ka zdravijem načinu života!
-              Registracijom na sajtu dobijate pristup chatu sa nutricionistom
-              ili trenerom, gde možete postavljati pitanja, dobijati savete i
-              prilagođene preporuke na osnovu vaših ciljeva i potreba.{" "}
+            <div>
+              <p>
+                Ne morate biti sami na svom putu ka zdravijem načinu života!
+                Registracijom na sajtu dobijate pristup chatu sa nutricionistom
+                ili trenerom, gde možete postavljati pitanja, dobijati savete i
+                prilagođene preporuke na osnovu vaših ciljeva i potreba.{" "}
+              </p>
               <ul>
                 <li>
                   Želite da smršate, ali ne znate kako da prilagodite ishranu?
@@ -86,13 +91,15 @@ const Home = () => {
                 </li>
               </ul>
               Naši stručnjaci su tu da pomognu!
-            </p>
+            </div>
             <h2>Počnite odmah! </h2>
-            <p>
-              Zdrav način života počinje sa pravim informacijama i alatima koji
-              vam olakšavaju put do cilja. Na Fit Formuli imate sve što vam je
-              potrebno za praćenje ishrane, planiranje obroka i donošenje boljih
-              odluka o svom zdravlju.
+            <div>
+              <p>
+                Zdrav način života počinje sa pravim informacijama i alatima
+                koji vam olakšavaju put do cilja. Na Fit Formuli imate sve što
+                vam je potrebno za praćenje ishrane, planiranje obroka i
+                donošenje boljih odluka o svom zdravlju.
+              </p>
               <ul>
                 <li>Registrujte se danas i otkrijte moć pravilne ishrane!</li>
                 <li>
@@ -101,7 +108,7 @@ const Home = () => {
                 </li>
               </ul>
               Pridružite nam se i napravite prvi korak ka boljem životu!
-            </p>
+            </div>
           </div>
         </div>
       </div>

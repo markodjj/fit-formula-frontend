@@ -26,6 +26,7 @@ const TablePage = () => {
       {type && (
         <div className="table-page">
           <CaloriesTable name={type} />
+          {/* <InfiniteScroll /> */}
         </div>
       )}
 

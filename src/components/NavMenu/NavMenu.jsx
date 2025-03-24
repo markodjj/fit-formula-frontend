@@ -3,6 +3,7 @@ import navListData from "../../data/navListData";
 import NavListItem from "./NavListItem";
 
 import "./NavMenu.scss";
+import FetchedImage from "../FetchedImage";
 export const NavMenu = () => {
   const [isVisible, setIsVisible] = useState(false);
   const handleClick = () => {};
@@ -10,7 +11,9 @@ export const NavMenu = () => {
   return (
     <div className="nav-menu">
       <ul className="nav-list">
-        <img src="../../assets/Logo.png" alt="Logo" className="logo" />
+        {/* <img src="../../assets/Logo.png" alt="Logo" className="logo" /> */}
+
+        <FetchedImage itemName="Logo" />
         <div className="nav-items">
           {navListData.map((item) => (
             <NavListItem key={item._id} item={item} />

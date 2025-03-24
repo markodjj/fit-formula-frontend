@@ -41,7 +41,7 @@ const CalculatorPage = () => {
           </button>
         </div>
         <div className="right-side">
-          <PlanOffer />
+          <PlanOffer planName={"Plan-ad_owvq7l"} />
         </div>
       </div>
 
